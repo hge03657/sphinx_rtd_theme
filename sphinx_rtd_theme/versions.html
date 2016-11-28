@@ -19,6 +19,12 @@
           <dd><a href="{{ url }}">{{ type }}</a></dd>
         {% endfor %}
       </dl>
+      <dl>
+        <dt>User Downloads</dt>
+        {% for ver, url in versions %}
+          <dd><a href="/media/htmlzip/{{ slug }}/{{ ver }}/{{ slug }}.zip">{{ ver }}</a></dd>
+        {% endfor %}
+      </dl>
       <hr/>
       Free document hosting provided by <a href="http://www.readthedocs.org">Read the Docs</a>.
 
